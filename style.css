@@ -76,3 +76,16 @@ nav a:hover {
     font-family: Attera;
     src: url("Fonts/attera/Attera.otf") format("opentype");
 }
+
+#hero {
+    position: relative;
+    margin: 20px;
+    max-width: 900px;
+}
+
+#hero img {
+    width: 900px;
+    display: block;
+}
+
+
