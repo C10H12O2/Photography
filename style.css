@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Attera, sans-serif;
     margin: 0;
     background: #d6d6d6;
 }
@@ -10,8 +10,8 @@ body {
 }
 
 nav {
-   margin: 0;
-   padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul {
@@ -24,10 +24,55 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    color:white;
+    color: white;
     padding: 10px;
 }
 
 nav a:hover {
     color: #9a9696;
+}
+
+#home-gallary {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    grid-template-columns: 2fr 1fr;
+}
+
+.introductory-text h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.introductory-text p {
+    font-size: 16px;
+    color: white;
+    line-height: 1.8;
+}
+
+.introductory-text button {
+    margin-top: 10px;
+    padding: 8px;
+    ;
+    border: 1px solid white;
+    background: none;
+    cursor: pointer;
+    color: white;
+}
+
+.example-shots {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 10px;
+}
+
+.example-shots img {
+    width: 100%;
+    border: 2px solid white;
+}
+
+@font-face {
+    font-family: Attera;
+    src: url("Fonts/attera/Attera.otf") format("opentype");
 }
