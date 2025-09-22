@@ -12,6 +12,11 @@ body {
     overflow: visible;
 }
 
+.frame img {
+    width: 100%;
+    display: block;
+}
+
 nav {
     margin: 0;
     padding: 0;
@@ -42,6 +47,15 @@ nav a:hover {
     grid-template-columns: 2fr 1fr;
 }
 
+.introductory-text,
+.example-shots {
+    transform: translateY(30px);
+}
+
+.introductory-text{
+    animation-delay: 0.2s;
+}
+
 .introductory-text h2 {
     font-size: 40px;
     margin-bottom: 20px;
@@ -59,7 +73,7 @@ nav a:hover {
     ;
     border: 1px solid white;
     background: none;
-    cursor:default;
+    cursor: default;
     color: white;
 }
 
@@ -87,7 +101,7 @@ nav a:hover {
 }
 
 #hero img {
-   
+
     display: block;
     height: auto;
     width: 100%;
@@ -96,10 +110,10 @@ nav a:hover {
 .overlay {
     position: absolute;
     top: 50%;
-    left: 50%;
+
     transform: translate(-50%, -50%);
     color: black;
-    text-align:right;
+    text-align: right;
 }
 
 .overlay h1 {
@@ -112,9 +126,14 @@ nav a:hover {
 .overlay p {
     font-size: 37px;
     text-align: right;
+    margin: 6px;
 }
 
-#Gallary{
+.overlay-right {
+    right: 20px;
+}
+
+#Gallary {
     text-align: center;
     margin: 0;
     display: flex;
@@ -122,31 +141,35 @@ nav a:hover {
 
 }
 
-#Gallary img{
+#Gallary img {
     max-width: 100%;
 
 }
 
-.gallary-container{
+.gallary-container {
     position: relative;
     max-width: 900px;
     width: 100%;
 }
 
-.gallary-container img{
+.gallary-container img {
     width: 100%;
     display: block;
     border: 2px solid white;
+    overflow: hidden;
+
 }
 
-.Cover-text{
+.Cover-text {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     color: black;
+    text-align: center;
+
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
