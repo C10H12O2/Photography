@@ -70,7 +70,6 @@ nav a:hover {
 .introductory-text button {
     margin-top: 10px;
     padding: 8px;
-    ;
     border: 1px solid white;
     background: none;
     cursor: default;
@@ -87,6 +86,12 @@ nav a:hover {
 .example-shots img {
     width: 100%;
     border: 2px solid white;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.example-shots img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.3);
 }
 
 @font-face {
@@ -94,6 +99,12 @@ nav a:hover {
     src: url("Fonts/attera/Attera.otf") format("opentype");
 }
 
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 #hero {
     display: flex;
     justify-content: center;
