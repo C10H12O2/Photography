@@ -117,12 +117,26 @@ nav a:hover {
 #Gallary{
     text-align: center;
     margin: 0;
+    display: flex;
+    margin: 10px;
 
 }
 
 #Gallary img{
     max-width: 100%;
 
+}
+
+.gallary-container{
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+}
+
+.gallary-container img{
+    width: 100%;
+    display: block;
+    border: 2px solid white;
 }
 
 .Cover-text{
